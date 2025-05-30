@@ -7,5 +7,22 @@
 </head>
 <body>
   <p>If you are not redirected, <a href="splash_screen/index.html">click here</a>.</p>
+
+  <script>
+  if (window.innerWidth < 768) {
+    document.write(`
+      <style>
+        body { display: none; }
+      </style>
+      <div style="padding: 2rem; text-align: center; font-family: sans-serif;">
+        <h1>Mobile Not Supported</h1>
+        <p>This website is best viewed on a desktop or laptop screen.</p>
+      </div>
+    `);
+  }
+</script>
+
+
 </body>
+
 </html>
