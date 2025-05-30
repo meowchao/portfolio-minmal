@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    /* font-size: medium; */
+
+}
+body{
+    background-color: #1e1e2e;
+}
+div{
+    color: #c6d0f5;
+}
+
+.headings header{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    
+}
+.headings h3{
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 6px;                        
+                    
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05); 
+    padding: 1rem;                             
+    color: #c6d0f5;                              
+    font-family: monospace;                    
+    
+
+}
+.quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #89b4fa;
+    height: 80vh;
+    text-align: center;
+    font-size: larger;
+    max-width: 75vh;
+    align-items: center;
+    margin-left: 60vh;
+
+    
+}
+
+.ascii_art{
+    font-family: monospace;
+    color: #c6d0f5;
+    font-size: 13px;
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+#about{
+    display: none;
+}
+
+.about{
+    display: flex;
+    text-align: center;
+    margin-top: 30vh;
+    margin-left: 20vh;
+    
+    
+    
+}
+.container{
+    position: relative;
+}
+.me_img{
+    height: 170px;
+    position: flex;
+    margin-top: 40;
+    margin-left: -1425px;
+
+    
+}
+.aboutme_para{
+    color: #a6e3a1;
+    font-size: 1.3rem;
+    font-family: monospace;
+    font-weight: 600;
+    display: flex;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+   
+}
+
+.label {
+    color: #f4dbd6; 
+    font-weight: bold;
+}
+
+.value {
+    color: #b4befe 
+}
+
+.dash {
+    color: #f4b8e4; 
+    
+}
+.project_section{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15vh;
+}
+.project_section p{
+    max-width: 800px;
+    word-wrap: normal;
+}
+.project {
+    margin: 20px;
+    max-width: 800px;
+    padding: 1rem;
+    border-left: 4px solid #f4b8e4;
+    background-color: #232634;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+.project h4 {
+    color: #89b4fa;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    color: #cdd6f4;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+#project_section {
+    display: none;
+}
+#aboutme_para{
+    display: none;
+}
+#links{
+    display: none;
+}
+#blogs{
+    display: none;
+}
+#leave_a_note{
+    display: none;
+}
+
+
+.links {
+    font-family: monospace;    
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 20px;
+    align-items: left;
+    margin-top: 20vh;
+    margin-left: 80vh;
+    font-size: 40px;
+}
+
+.links a {
+    font-size: 30px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.links svg {
+    width: 30px;
+    height: 30px;
+}
+.blogs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40vh;
+
+
+}
+.ascii_art2{
+    font-size: 15px;
+}
+.leave_a_note form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 75vh;
+    margin-top: 30vh;
+    gap: 1rem;
+    background-color: #232634;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    color: #c6d0f5;
+    font-family: monospace;
+}
+
+.leave_a_note textarea {
+    width: 300px;
+    height: 100px;
+    background-color: #1e1e2e;
+    color: #c6d0f5;
+    border: 1px solid #c6d0f5;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+.leave_a_note button {
+    background-color: #f4dbd6;
+    color: #1e1e2e;
+    border: none;
+    padding: 10px 20px;
+    font-family: monospace;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.leave_a_note button:hover {
+    background-color: #a6e3a1;
+}
+  
+
+
+
