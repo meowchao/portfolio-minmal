@@ -2,27 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=splash_screen/index.html">
   <title>Redirecting...</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hidden { display: none; }
+  </style>
 </head>
 <body>
-  <p>If you are not redirected, <a href="splash_screen/index.html">click here</a>.</p>
+  <div id="mobile-message" class="hidden">
+    <h1>Mobile Not Supported</h1>
+    <p>This website is best viewed on a desktop or laptop screen.</p>
+  </div>
+
+  <div id="redirect-message">
+    <p>If you are not redirected, <a href="splash_screen/index.html">click here</a>.</p>
+  </div>
 
   <script>
-  if (window.innerWidth < 768) {
-    document.write(`
-      <style>
-        body { display: none; }
-      </style>
-      <div style="padding: 2rem; text-align: center; font-family: sans-serif;">
-        <h1>Mobile Not Supported</h1>
-        <p>This website is best viewed on a desktop or laptop screen.</p>
-      </div>
-    `);
-  }
-</script>
-
-
+    if (window.innerWidth < 768) {
+      // Mobile device: show message
+      document.getElementById('mobile-message').classList.remove('hidden');
+      document.getElementById('redirect-message').classList.add('hidden');
+    } else {
+      // Desktop: redirect
+      window.location.href = "splash_screen/index.html";
+    }
+  </script>
 </body>
-
 </html>
+
